@@ -1,0 +1,44 @@
+{
+  "name": "rrssr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack -w && nodemon server.js",
+    "startw": "webpack -w",
+    "startn": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "dependencies": {
+    "babel-loader": "^8.0.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "isomorphic-fetch": "^2.2.1",
+    "nodemon": "^1.18.7",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1",
+    "serialize-javascript": "^1.5.0",
+    "webpack": "^4.27.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "webpack-cli": "^3.1.2"
+  }
+}
